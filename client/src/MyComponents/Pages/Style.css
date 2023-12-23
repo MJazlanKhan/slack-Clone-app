@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    background-color: #222122;
+    
+}
+.homewrapper{
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.innerWrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #1A191A;
+    gap: 10px;
+}
+.fr-view{
+    background-color: #1A191A;
+    color:#fff;
+    padding: 40px 0 !important;
+}
+.fr-second-toolbar{
+    display: none;
+}
+
+.signup-wrapper{
+    background-image: url(https://e0.pxfuel.com/wallpapers/306/64/desktop-wallpaper-dark-and-background-dark-for-pc.jpg);
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-inner-wrapper{
+    padding: 15px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: opacity(50%);
+}
+.form .ant-col label{
+    color: #fff;
+}
+.ant-picker-input input::placeholder{
+    color: #fff !important;
+}
+.form .ant-col .ant-select-selector{
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    width: 500px;
+}
+.bgTransparent{
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    width: 500px;
+}
+.ant-picker-suffix{
+    color: #fff !important; 
+}
+.bgTransparent::placeholder{
+    color: #fff;
+    font-size: 18px;
+}
+.signup-inner-wrapper img{
+    width: 200px;
+}
+.signup-inner-wrapper h2{
+    text-align: center;
+    color: #fff;
+}
+.signup-inner-wrapper .btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+
+}
+.signup-inner-wrapper .btns button{
+    padding: 10px 60px;
+    margin-right: 10px ;
+    font-size: 18px;
+    background: none;
+    border: 3px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+.signup-inner-wrapper .btns button:hover{
+    background: #fff;
+    color: #000;
+}
+form .ant-btn{
+    height: 40px;
+    width: 100px;
+    background: none;
+    color: #fff;
+    border: 3px solid #fff;
+    font-size: 18px;
+}
+form .ant-btn:hover{
+    color: #000;
+    background-color: #fff;
+}
+.action-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ant-picker-input input{
+    color:#fff !important
+}
+.alert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alert .ant-alert{
+    min-width: 350px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.alert .sucess{
+    background-color: rgb(48, 146, 48);
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+.alert .error{
+    background-color: rgb(172, 52, 52);
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}

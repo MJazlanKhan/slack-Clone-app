@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.searchBar {
+    border: 1px solid black;
+    width: 600px;
+    background-color: #525253;
+    padding: 5px 5px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+.searchBar .anticon{
+    align-items: flex-start;
+    padding-top: 5px;
+    font-size: 18px;
+}
+.searchBar ul, .searchBar li{
+    list-style: none;
+    color: #fff;
+}
+.searchBarbox{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    flex-direction: column;
+}
+.searchBarbox input{
+    width: 400px;
+}
+.searchResults{
+    padding: 10px 0;
+}
+.circle{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.searchBar li{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 8px;
+}
+.searchBar input::placeholder{
+    color: #fff;
+}
+.searchBar li img{
+    padding-left: 15px;
+    border-radius: 50px;
+    object-fit: cover;
+    height: 100%;
+    width: 25px;
+}
+.singleMessage{
+    width:100%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+.singleMessage img{
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+}
+.sent-message {
+    text-align: right;
+    padding: 5px 30px;
+    color: #fff;
+    font-size: 18px;
+    /* Add other styling for sent messages */
+  }
+  .flexend{
+    justify-content: flex-end;
+  }
+  .singleMessage{
+    display: flex;
+    gap: 10px;
+  }
+  .singleMessage img{
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+  }
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    height: 100%;
+    flex-direction: column;
+  }
+  .center img{
+    width: 250px;
+  }
+  .received-message {
+    text-align: left;
+    padding: 5px 30px;
+    color: #fff;
+    font-size: 18px;
+    /* Add other styling for received messages */
+  }
+  
+.headerWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A191A;
+    padding: 8px 0;
+}
+
+.searchBar input {
+    width: 90%;
+    height: 100%;
+    background: none;
+    border: none;
+}
+
+.ri-search-line {
+    font-size: 15px;
+    color: #fff;
+}
+
+.s-sidebar-innerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80px;
+}
+
+.s-sidebar-innerWrapper img {
+    width: 80%;
+}
+
+.s-sidebar-innerWrapper .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.s-sidebar-innerWrapper .icon i {
+    font-size: 22px;
+    padding: 8px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.icon i:hover {
+    background-color: #565657;
+    cursor: pointer;
+    font-size: 25px;
+
+}
+
+.s-sidebar-innerWrapper .icon span {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.s-sidebar-Wrapper {
+    background-color: #1A191A;
+}
+
+.largesidebar-wrapper {
+    width: 350px;
+    background-color: #161617;
+    padding: 15px 0;
+}
+
+.singleMessage {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.largesidebar-inner-wrapper {
+    padding: 5px 15px;
+    color: #fff;
+}
+
+.singleMessage img {
+    border-radius: 5px;
+}
+
+.online {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(13, 190, 13);
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-left: -13px;
+}
+
+.headline {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.headline-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headline-wrapper i {
+    cursor: pointer;
+    padding: 8px;
+}
+
+.headline-wrapper i:hover {
+    background-color: #525253;
+    border-radius: 10px;
+}
+
+.box {
+    width: 510px;
+}
+.box h2{
+    text-align: center;
+}
+.table{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#fff
+}
+.ant-form-item-control-input-content{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.ant-drawer-body{
+    background-color: #000;
+}
+.fr-element{
+    color: #fff !important;
+    font-size: 18px !important;
+}
+.profilepichover:hover{
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+
+}
+.ant-form-item-control-input-content{
+    display: block;
+}
+.editorItems{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.msgimg{
+    width: 150px !important;
+    height: 150px !important;
+}
+.editorItems .inner{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.editorItems .inner i{
+    font-size: 25px;
+    color:#fff;
+    cursor: pointer;
+}
+.table img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+}
+.table table tr{
+    width: 450px;
+}
+.flex{
+    justify-content: center !important;
+}
+.table table tr{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+.table table tr td, .table table tr label{
+    color:#fff;
+    font-size: 20px;
+}
+.box .ri-checkbox-circle-line{
+    color: #2BDA17;;
+}
+.box input {
+    background-color: #525253;
+    border: none;
+    color: white;
+}
+.box input::placeholder {
+    color: white;
+    font-size: 18px;
+}
+.box .searchBar {
+    width: 500px;
+}
+.messages {
+    width: 100%;
+    height: 70vh;
+    overflow-y: auto;
+    padding: 0 13px;
+}
+.ant-collapse {
+    border: none !important;
+}
+.content-wrapper {
+    width: 100%;
+}
+
+div.editor {
+    background-color: #1e1e1e;
+    /* Dark background color */
+    color: #ffffff;
+    /* Light text color */
+}
+
+.fr-toolbar {
+    background-color: #222529 !important;
+}
+
+.fr-toolbar svg path {
+    fill: #fff !important;
+}
+
+.name {
+    color: #fff;
+}
+.chatname{
+    cursor: pointer;
+}
+.ant-collapse-content{
+    background-color: #161617 !important;
+    color: #fff !important;
+}
+.ant-collapse-header{
+    color: #fff !important;
+}
+.name:hover{
+    cursor: pointer;
+}
+
+.profiledetails {
+    display: flex;
+    gap: 15px;
+    margin-left: 25px;
+    align-items: center;
+}
+
+.profiledetails img {
+    border-radius: 5px;
+}
+
+.detailsonline {
+    margin-left: -25px !important;
+}
+
+
+.allmsgs{
+    height: 100vh !important;
+}
+.fr-element{
+    min-height: 180px !important;
+}
+.allmsgs::-webkit-scrollbar {
+    width: 10px;
+    background-color: #222529;
+  }
+  .name{
+    font-size: 20px !important;
+  }

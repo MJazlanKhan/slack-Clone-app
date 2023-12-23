@@ -1,0 +1,51 @@
+Slack Clone
+
+Create a Slack clone, with real-time one to one and group messaging. ✅
+
+Frontend (React):
+
+Create a user-friendly UI for the system.✅
+UI should match 100% with Slack.✅
+In the  sidebar, you have to show one-on-one chat and group chat✅
+When a chat is clicked, displays all the messages of that group or user.✅
+Display messages from the past.✅
+The user should be able to add a new user for chat.✅
+User can upload their profile pictures, names, and other related info, see Slack.✅
+When a username is clicked display that user details in the sidebar as slack does.✅
+User must be able to login and signup.✅
+Use cloudinary to upload images.✅
+User must be able to shareimages and videos in chat ✅
+System must show the online or offline status of other user. ✅
+System must be realtime,, meaning messages must be send and received in realtime without calling any api. ✅
+
+Backend (Express.js):
+
+Set up RESTful API endpoints for CRUD operations.✅
+Implement user authentication and authorization with jwt tokens.✅
+Ensure secure password storage using bcrypt or a similar method.✅
+Send proper error and status messages with proper error codes. ✅
+
+Database (MongoDB):
+
+Design a MongoDB schema for storing jobs, users, details etc.✅
+Use Mongoose to connect with MongoDB.✅
+Use Mongoose schema validation.✅
+Validation:
+
+Implement server-side data validation with some 3rd party package(such as express-validator) to prevent malicious inputs (Bonus)
+Error Handling:
+
+Create a robust error-handling system on both the front end and back end.
+Provide meaningful error messages to users.
+Documentation:
+
+Pused your code to Git Hub with proper readme (use readme.so to create a beautiful readme)
+Important Notes:
+
+
+Use socket.io for realtime communication.
+Copy slack UI.
+Use as much help as needed from the internet.
+Show error and success messages on the front-end where necessary.
+Show the loading state where data is loading and the form is being submitted.
+Send proper and meaningful error messages from the backend.
