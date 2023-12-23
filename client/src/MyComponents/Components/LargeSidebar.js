@@ -20,7 +20,7 @@ const LargeSidebar = () => {
     };
 
     try {
-      const res = await axios.get('http://localhost:9000/api/v1/chat', config);
+      const res = await axios.get('https://slackapp-yjrk.onrender.com/api/v1/chat', config);
       if (Array.isArray(res.data) && res.data.length > 0) {
         setChats(res.data);
       } else {

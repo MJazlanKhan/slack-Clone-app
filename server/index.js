@@ -5,7 +5,7 @@ import router from './routes/Routes.js'
 import connectToMongo from './config/db.js';
 import { Server } from "socket.io";
 import path from "path"
-
+const  BASE_URL = process.env.BASE_URL
 const Mode = "production"
 const app = express()
 app.use(bodyParser.json());
@@ -36,7 +36,7 @@ const server = app.listen(PORT, () => console.log(`Server is Running on ${PORT}`
 const io = new Server(server, {
     pingTimeout: 60000,
     cors: {
-        origin: "http://localhost:3000"
+        origin: `${BASE_URL}`
     }
 })
 

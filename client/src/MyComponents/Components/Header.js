@@ -41,7 +41,7 @@ const Header = () => {
     };
     try {
       setLoading("userload")
-      const response = await axios.post(`http://localhost:9000/api/v1/chat/${user._id}` , user._id , config);
+      const response = await axios.post(`https://slackapp-yjrk.onrender.com/api/v1/chat/${user._id}` , user._id , config);
       console.log(response.data);
       setNewMember(response.data)
       setLoading(false)
@@ -53,7 +53,7 @@ const Header = () => {
 
   const searchUsers = async () => {
     try {
-      const response = await axios.get(`http://localhost:9000/api/v1/search?word=${searchWord}`,{
+      const response = await axios.get(`https://slackapp-yjrk.onrender.com/api/v1/search?word=${searchWord}`,{
         headers: {
           'user-id': userId 
         }

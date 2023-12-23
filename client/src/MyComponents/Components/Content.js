@@ -57,7 +57,7 @@ const Content = () => {
       // Set loading to true before making the request
       setLoading("loadingMessages");
 
-      const res = await axios.get(`http://localhost:9000/api/v1/message/${selectedChat._id}`, config);
+      const res = await axios.get(`https://slackapp-yjrk.onrender.com/api/v1/message/${selectedChat._id}`, config);
       if (res) {
         console.log(selectedChat._id)
         setLoading(false);
@@ -144,7 +144,7 @@ const Content = () => {
       setLoading("loadmsg");
 
       // Send a message with content and image URL
-      const res = await axios.post(`http://localhost:9000/api/v1/message`, {
+      const res = await axios.post(`https://slackapp-yjrk.onrender.com/api/v1/message`, {
         content: details.content,
         chatId: details.chatId,
         imageUrl: imageUrl,
@@ -179,7 +179,7 @@ const Content = () => {
 
   const searchUsers = async () => {
     try {
-      const response = await axios.get(`http://localhost:9000/api/v1/search?word=${searchWord}`, {
+      const response = await axios.get(`https://slackapp-yjrk.onrender.com/api/v1/search?word=${searchWord}`, {
         headers: {
           'user-id': userId
         }
@@ -213,7 +213,7 @@ const Content = () => {
       },
     };
     try {
-      const response = await axios.post('http://localhost:9000/api/v1/group', {
+      const response = await axios.post('https://slackapp-yjrk.onrender.com/api/v1/group', {
         name: groupChatName, // Provide a name for the group chat
         users: JSON.stringify(groupUsers),
         pic: pic
@@ -363,7 +363,7 @@ const Content = () => {
   const changeGroupPic = async () => {
     console.log("id " + groupChat._id)
     try {
-      const res = await axios.post("http://localhost:9000/api/v1/groupPic", {
+      const res = await axios.post("https://slackapp-yjrk.onrender.com/api/v1/groupPic", {
         groupChatid: groupChat._id,
         imgUrl: profilePic
       });
@@ -384,7 +384,7 @@ const Content = () => {
   }
   const confirm = async (id) => {
     console.log("Confirmed" + id)
-    const res = await axios.put("http://localhost:9000/api/v1/groupremove", {
+    const res = await axios.put("https://slackapp-yjrk.onrender.com/api/v1/groupremove", {
       chatId: groupChat._id,
       userId: id
     })
@@ -398,7 +398,7 @@ const Content = () => {
     console.log(groupUsers)
     setLoading("adduser")
     try {
-      const res = await axios.put("http://localhost:9000/api/v1/groupadd", {
+      const res = await axios.put("https://slackapp-yjrk.onrender.com/api/v1/groupadd", {
         chatId: groupChat._id,
         userId: groupUsers
       })
