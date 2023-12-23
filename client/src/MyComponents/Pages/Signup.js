@@ -39,7 +39,7 @@ const Signup = () => {
             // Set loading to true before making the request
             setLoading("signinload");
             const updatedLoginval = { ...loginval, status: "Online" };
-            const res = await axios.post('https://slackapp-yjrk.onrender.com/api/v1/user/signin', updatedLoginval);
+            const res = await axios.post('https://slack-clone-app-server.onrender.com/api/v1/user/signin', updatedLoginval);
             console.log(res.data.user);
             setUser(res.data.user);
             const successMessage = res.data.message;
@@ -110,7 +110,7 @@ const Signup = () => {
         try {
             setLoading("signupload");
 
-            const res = await axios.post('https://slackapp-yjrk.onrender.com/api/v1/user/signup', Signupval);
+            const res = await axios.post('https://slack-clone-app-server.onrender.com/api/v1/user/signup', Signupval);
             console.log(res.data);
             const successMessage = res.data.message;
 

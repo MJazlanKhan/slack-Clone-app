@@ -27,7 +27,7 @@ const SmallSidebar = () => {
     console.log(UserData.email)
     var email = UserData.email
     try {
-      const res = await axios.post('https://slackapp-yjrk.onrender.com/api/v1/user/logout', {
+      const res = await axios.post('https://slack-clone-app-server.onrender.com/api/v1/user/logout', {
         email: email
       });
       if (res.status === 200) {
@@ -84,7 +84,7 @@ const SmallSidebar = () => {
   }
   const currentUser = async () => {
     try {
-      const res = await axios.get(`https://slackapp-yjrk.onrender.com/api/v1/currentUser/${userId}`);
+      const res = await axios.get(`https://slack-clone-app-server.onrender.com/api/v1/currentUser/${userId}`);
       // console.log(res.data.User);
       SetUserData(res.data)
       console.log(res)
@@ -100,7 +100,7 @@ const SmallSidebar = () => {
   }
   const changeGroupPic = async () => {
     try {
-      const res = await axios.post("https://slackapp-yjrk.onrender.com/api/v1/ChangeProfile", {
+      const res = await axios.post("https://slack-clone-app-server.onrender.com/api/v1/ChangeProfile", {
         userId: userId,
         imgUrl:profilePic
       });
@@ -119,7 +119,7 @@ const SmallSidebar = () => {
     setDetails({...Details , [e.target.name]:e.target.value})
   }
   const ValuesSubmit = async ()=>{
-    const res = await axios.post("https://slackapp-yjrk.onrender.com/api/v1/editProfile",{
+    const res = await axios.post("https://slack-clone-app-server.onrender.com/api/v1/editProfile",{
       userId: userId,
       Details
     })
